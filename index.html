@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta charset="UTF-8">
+		<title>OpenSAP - Developing Web Apps with SAPUI5</title>
+		<script
+			id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-resourceroots='{"opensap.myapp" : "./"}'>
+		</script>
+
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				//Insert 1 image
+			//	var oImage = new sap.m.Image({
+					//src: "https://images-na.ssl-images-amazon.com/images/I/51CgjziF9ZL._SL500_AC_SS350_.jpg"
+			//}).placeAt("content");
+			//oImage.setHeight("400px");
+			
+			//Creates a second tabs, text box, button, and carousel, but without text in box, button, and tabs
+			//sap.ui.xmlview({
+			//	viewName : "opensap.myapp.view.App"
+			//}).placeAt("content");
+			
+			new sap.ui.core.ComponentContainer({
+				name : "opensap.myapp"
+			}).placeAt("content");
+			});
+		</script>
+		
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
